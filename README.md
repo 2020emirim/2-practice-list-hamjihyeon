@@ -9,3 +9,4 @@
 - python manage.py createsuperuser
 - models Bookmark __str__() 출력하는 문구 설정
 - urls bookmark:list
+- views BookmarkList
