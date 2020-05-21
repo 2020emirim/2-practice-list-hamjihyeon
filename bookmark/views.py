@@ -11,6 +11,6 @@ class BookmarkList(ListView):  # bookmark_list.html
 
 class BookmarkCreateView(CreateView):  # bookmark-form.html
     model = Bookmark
-    fields = ['site_name', 'url']
+    fields = ['site_name', 'url']       #<form>태그엔 fields가 들어가야됨.
     template_name_suffix = '_create'  # bookmark_create.html
-    success_url = reverse_lazy('bookmark:list')
+    success_url = reverse_lazy('bookmark:list') #DB에 저장된 후 늦게 호출해라.
