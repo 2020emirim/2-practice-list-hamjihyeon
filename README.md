@@ -12,3 +12,6 @@
 - views BookmarkList
 - templates bookmark_list.html
 - views BookmarkCreateView
+- templates bookamrk_create
+- urls add
+- modify bookmark_list
