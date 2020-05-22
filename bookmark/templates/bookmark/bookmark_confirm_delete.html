@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark Confirm Delete</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>진짜 지울래? {{ bookmark }}</div>
+        <button type="submit">sure</button>
+    </form>
+</body>
+</html>
