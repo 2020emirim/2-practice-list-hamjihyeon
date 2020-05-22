@@ -7,7 +7,9 @@
 <body>
     <form action="" method="post">
         {% csrf_token %}
-        {{  form.as_ul }}
+        <table>
+            {{  form.as_table }}
+        </table>
         <button type="submit">Modify</button>
     </form>
 </body>
