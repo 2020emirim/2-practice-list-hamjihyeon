@@ -30,6 +30,8 @@
 {% endblock %}
 
 {% block pagination %}
+    {%  if is_paginated %}
+
     <ul class="pagination pagination-sm justify-content-center">
     {% if page_obj.has_previous %}
         <li class="page-item"><a href="{{ request.path }}?page={{ page_obj.previous_page_number }}" class="page-link">Previous</a></li>
@@ -47,4 +49,5 @@
         <li class="page-item"><a href="" class="page-link">Next</a></li>
     {% endif %}
     </ul>
+    {% endif %}
 {% endblock %}
